@@ -9,24 +9,24 @@
 ;=====================================================
 
 [colors]
-black = ${xrdb:color0:#1d2021}
-darkred = ${xrdb:color1:#bf616a}
-darkgreen = ${xrdb:color2:#a3be8c}
-darkyellow = ${xrdb:color3:#ebcb8b}
-darkblue = ${xrdb:color4:#5e81ac}
-darkmagenta = ${xrdb:color5:#b48ead}
-darkcyan = ${xrdb:color6:#8fbcbb}
-lightgray = ${xrdb:color7:#4c566a}
-gray = ${xrdb:color8:#eceff4}
-red = ${xrdb:color9:#bf616a}
-green = ${xrdb:color10:#a3be8c}
-yellow = ${xrdb:color11:#ebcb8b}
-blue = ${xrdb:color12:#81a1c1}
-magenta = ${xrdb:color13:#b48ead}
-cyan = ${xrdb:color14:#88c0d0}
-white = ${xrdb:color15:#eceff4}
-background = ${xrdb:color256:#2e3440}
-foreground = ${xrdb:color257:#eceff4}
+black = ${xrdb:color0:#282828}
+darkred = ${xrdb:color1:#cc241d}
+darkgreen = ${xrdb:color2:#98971a}
+darkyellow = ${xrdb:color3:#d79921}
+darkblue = ${xrdb:color4:#458588}
+darkmagenta = ${xrdb:color5:#b16286}
+darkcyan = ${xrdb:color6:#689d6a}
+lightgray = ${xrdb:color7:#a89984}
+gray = ${xrdb:color8:#7c6f63}
+red = ${xrdb:color9:#fb4934}
+green = ${xrdb:color10:#b8bb26}
+yellow = ${xrdb:color11:#fabd2f}
+blue = ${xrdb:color12:#83a598}
+magenta = ${xrdb:color13:#d3869b}
+cyan = ${xrdb:color14:#8ec07c}
+white = ${xrdb:color15:#ebdbb2}
+background = ${xrdb:color256:#3c3836}
+foreground = ${xrdb:color257:#bdae93}
 
 [bar/mybar]
 ;monitor = ${env:MONITOR:LVDS-1}
@@ -54,10 +54,10 @@ padding-right = 0
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = mono:pixelsize=9;1
-font-1 = Inconsolata Nerd Font:size=8;1
-font-2 = Noto Color Emoji:scale=10:style=Regular;2
-font-3 = Symbola:pixelsize=9;1
+font-0 = Comic Mono:pixelsize=10;1:style=Normal
+font-1 = Comic Mono:size=10;1:style=Normal
+font-2 = Comic Mono:scale=10:style=Normal;2
+font-3 = Comic Mono:pixelsize=10;1:style=Normal
 
 
 ; Other modules: xkeyboard filesystem xbacklight backlight-acpi cpu memory temperature powermenu weather

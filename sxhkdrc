@@ -20,8 +20,8 @@ super + Escape
 super + r
 	alacritty -e ranger
 
-super +n
-	nautilus
+super + n
+	nemo
 
 # quit/restart bspwm
 super + alt + {q,r}

@@ -3,7 +3,7 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 picom &
 
-feh --bg-center ~/Downloads/gura.png
+feh --bg-center ~/wg/random/gruvboxpacman.png
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
