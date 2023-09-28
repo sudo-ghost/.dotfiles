@@ -1,4 +1,4 @@
-let mapleader =","
+"Vimrc that i basically never edit i just add pluggins;
 
 if ! filereadable(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/autoload/plug.vim"'))
 	echo "Downloading junegunn/vim-plug to manage plugins..."
@@ -22,6 +22,9 @@ Plug 'morhetz/gruvbox'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'arcticicestudio/nord-vim'
 Plug 'xuhdev/vim-latex-live-preview'
+Plug 'L04DB4L4NC3R/texgroff.vim'
+Plug 'tssm/fairyfloss.vim'
+Plug 'itsjunetime/rose-pine-vim'
 call plug#end()
 
 let g:livepreview_previewer = 'zathura'
@@ -37,7 +40,11 @@ set noruler
 set laststatus=0
 set noshowcmd
 
-colorscheme nord
+if has('termguicolors')
+  set termguicolors
+ endif
+
+colorscheme gruvbox
 set bg=dark
 
 " Some basics:
@@ -157,5 +164,6 @@ function! ToggleHiddenAll()
     endif
 endfunction
 nnoremap <leader>h :call ToggleHiddenAll()<CR>
+
 
 hi Normal guibg=NONE ctermbg=NONE
