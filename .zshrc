@@ -1,4 +1,5 @@
-##THIS IS THE ULTIMATE ZOOMER SHELL##
+##I never really edit this##
+
 precmd_functions=""
 # Enable colors and change prompt:
 autoload -U colors && colors
@@ -28,6 +29,7 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
 
 #aliases cause im lazy
+ alias vim="nvim"
  alias pi="sudo pacman -S"
  alias pr="sudo pacman -R"
  alias pu="sudo pacman -Syu"
@@ -42,9 +44,10 @@ bindkey -v '^?' backward-delete-char
  alias ac='vim .config/alacritty/alacritty.yml'
  alias kaq='killall qbittorrent'
  alias nf='neofetch'
- alias sc='sxiv .caseyy.rae/'
  alias re='rofi-edit'
  alias space='ncdu'
+ alias kas='killall spotify'
+ alias kad='killall Discord'
 # Change cursor shape for different vi modes.
 function zle-keymap-select {
   if [[ ${KEYMAP} == vicmd ]] ||
