@@ -454,6 +454,177 @@ schemes:
     end:
       foreground: '#6e6a86'
       background: '#1f1d2e'
+
+
+  chocolate: &chocolate
+    
+    primary:
+     background: '#252221'
+     foreground: '#c8baa4'
+    cursor:
+     text: '0x383838'
+     cursor: '0xdcdccc'
+
+  # Normal colors
+  normal:
+    black:   '#d08b65'
+    red:     '#c65f5f'
+    green:   '#859e82'
+    yellow:  '#d9b27c'
+    blue:    '#728797'
+    magenta: '#998396'
+    cyan:    '#829e9b'
+    white:   '#ab9382'
+
+  # Bright colors
+  bright:
+    black:   '#d08b65'
+    red:     '#c65f5f'
+    green:   '#859e82'
+    yellow:  '#d9b27c'
+    blue:    '#728797'
+    magenta: '#998396'
+    cyan:    '#829e9b'
+    white:   '#ab9382'
+
+schemes:
+  everforest_dark_hard: &everforest_dark_hard
+    primary:
+      background: '#272e33'
+      foreground: '#d3c6aa'
+    normal:
+      black:   '#414b50'
+      red:     '#e67e80'
+      green:   '#a7c080'
+      yellow:  '#dbbc7f'
+      blue:    '#7fbbb3'
+      magenta: '#d699b6'
+      cyan:    '#83c092'
+      white:   '#d3c6aa'
+    bright:
+      black:   '#475258'
+      red:     '#e67e80'
+      green:   '#a7c080'
+      yellow:  '#dbbc7f'
+      blue:    '#7fbbb3'
+      magenta: '#d699b6'
+      cyan:    '#83c092'
+      white:   '#d3c6aa'
+  
+  everforest_dark_medium: &everforest_dark_medium
+    primary:
+      background: '#2d353b'
+      foreground: '#d3c6aa'
+    normal:
+      black:   '#475258'
+      red:     '#e67e80'
+      green:   '#a7c080'
+      yellow:  '#dbbc7f'
+      blue:    '#7fbbb3'
+      magenta: '#d699b6'
+      cyan:    '#83c092'
+      white:   '#d3c6aa'
+    bright:
+      black:   '#475258'
+      red:     '#e67e80'
+      green:   '#a7c080'
+      yellow:  '#dbbc7f'
+      blue:    '#7fbbb3'
+      magenta: '#d699b6'
+      cyan:    '#83c092'
+      white:   '#d3c6aa'
+  
+  everforest_dark_soft: &everforest_dark_soft
+    primary:
+      background: '#333c43'
+      foreground: '#d3c6aa'
+    normal:
+      black:   '#4d5960'
+      red:     '#e67e80'
+      green:   '#a7c080'
+      yellow:  '#dbbc7f'
+      blue:    '#7fbbb3'
+      magenta: '#d699b6'
+      cyan:    '#83c092'
+      white:   '#d3c6aa'
+    bright:
+      black:   '#4d5960'
+      red:     '#e67e80'
+      green:   '#a7c080'
+      yellow:  '#dbbc7f'
+      blue:    '#7fbbb3'
+      magenta: '#d699b6'
+      cyan:    '#83c092'
+      white:   '#d3c6aa'
+  
+  everforest_light_hard: &everforest_light_hard
+    primary:
+      background: '#fffbef'
+      foreground: '#5c6a72'
+    normal:
+      black:   '#5c6a72'
+      red:     '#f85552'
+      green:   '#8da101'
+      yellow:  '#dfa000'
+      blue:    '#3a94c5'
+      magenta: '#df69ba'
+      cyan:    '#35a77c'
+      white:   '#e8e5d5'
+    bright:
+      black:   '#5c6a72'
+      red:     '#f85552'
+      green:   '#8da101'
+      yellow:  '#dfa000'
+      blue:    '#3a94c5'
+      magenta: '#df69ba'
+      cyan:    '#35a77c'
+      white:   '#e8e5d5'
+  
+  everforest_light_medium: &everforest_light_medium
+    primary:
+      background: '#fdf6e3'
+      foreground: '#5c6a72'
+    normal:
+      black:   '#5c6a72'
+      red:     '#f85552'
+      green:   '#8da101'
+      yellow:  '#dfa000'
+      blue:    '#3a94c5'
+      magenta: '#df69ba'
+      cyan:    '#35a77c'
+      white:   '#e0dcc7'
+    bright:
+      black:   '#5c6a72'
+      red:     '#f85552'
+      green:   '#8da101'
+      yellow:  '#dfa000'
+      blue:    '#3a94c5'
+      magenta: '#df69ba'
+      cyan:    '#35a77c'
+      white:   '#e0dcc7'
+  
+  everforest_light_soft: &everforest_light_soft
+    primary:
+      background: '#f3ead3'
+      foreground: '#5c6a72'
+    normal:
+      black:   '#5c6a72'
+      red:     '#f85552'
+      green:   '#8da101'
+      yellow:  '#dfa000'
+      blue:    '#3a94c5'
+      magenta: '#df69ba'
+      cyan:    '#35a77c'
+      white:   '#d8d3ba'
+    bright:
+      black:   '#5c6a72'
+      red:     '#f85552'
+      green:   '#8da101'
+      yellow:  '#dfa000'
+      blue:    '#3a94c5'
+      magenta: '#df69ba'
+      cyan:    '#35a77c'
+      white:   '#d8d3ba'
 ######################################################################
 ## SET THEME: Choose ONE color scheme from those in the above list. ##
 ## ###################################################################
@@ -466,7 +637,7 @@ schemes:
 # *solarized-dark
 # *tomorrow-night
 # *fairyfloss
-colors: *gruvbox-dark
+colors: *everforest_dark_hard
 # Visual Bell
 #
 # Any time the BEL code is received, Alacritty "rings" the visual bell. Once
@@ -498,7 +669,7 @@ colors: *gruvbox-dark
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
 window:
-  opacity: 0.90
+  opacity: 0.95
 # background_opacity: 0.80
 
 #selection:
