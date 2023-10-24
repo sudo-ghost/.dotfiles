@@ -625,6 +625,289 @@ schemes:
       magenta: '#df69ba'
       cyan:    '#35a77c'
       white:   '#d8d3ba'
+
+  catppuccin: &catppuccin
+    # Default colors
+    primary:
+        background: "#24273A" # base
+        foreground: "#CAD3F5" # text
+        # Bright and dim foreground colors
+        dim_foreground: "#CAD3F5" # text
+        bright_foreground: "#CAD3F5" # text
+
+    # Cursor colors
+    cursor:
+        text: "#24273A" # base
+        cursor: "#F4DBD6" # rosewater
+    vi_mode_cursor:
+        text: "#24273A" # base
+        cursor: "#B7BDF8" # lavender
+
+    # Search colors
+    search:
+        matches:
+            foreground: "#24273A" # base
+            background: "#A5ADCB" # subtext0
+        focused_match:
+            foreground: "#24273A" # base
+            background: "#A6DA95" # green
+        footer_bar:
+            foreground: "#24273A" # base
+            background: "#A5ADCB" # subtext0
+
+    # Keyboard regex hints
+    hints:
+        start:
+            foreground: "#24273A" # base
+            background: "#EED49F" # yellow
+        end:
+            foreground: "#24273A" # base
+            background: "#A5ADCB" # subtext0
+
+    # Selection colors
+    selection:
+        text: "#24273A" # base
+        background: "#F4DBD6" # rosewater
+
+    # Normal colors
+    normal:
+        black: "#494D64" # surface1
+        red: "#ED8796" # red
+        green: "#A6DA95" # green
+        yellow: "#EED49F" # yellow
+        blue: "#8AADF4" # blue
+        magenta: "#F5BDE6" # pink
+        cyan: "#8BD5CA" # teal
+        white: "#B8C0E0" # subtext1
+
+    # Bright colors
+    bright:
+        black: "#5B6078" # surface2
+        red: "#ED8796" # red
+        green: "#A6DA95" # green
+        yellow: "#EED49F" # yellow
+        blue: "#8AADF4" # blue
+        magenta: "#F5BDE6" # pink
+        cyan: "#8BD5CA" # teal
+        white: "#A5ADCB" # subtext0
+
+    # Dim colors
+    dim:
+        black: "#494D64" # surface1
+        red: "#ED8796" # red
+        green: "#A6DA95" # green
+        yellow: "#EED49F" # yellow
+        blue: "#8AADF4" # blue
+        magenta: "#F5BDE6" # pink
+        cyan: "#8BD5CA" # teal
+        white: "#B8C0E0" # subtext1
+
+    indexed_colors:
+        - { index: 16, color: "#F5A97F" }
+        - { index: 17, color: "#F4DBD6" }
+
+# Base16 Gruvbox light, hard 256 - alacritty color config
+# Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
+gruvbox-light: &gruvbox-light
+  # Default colors
+  primary:
+    background: '0xf9f5d7'
+    foreground: '0x504945'
+
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text: '0xf9f5d7'
+    cursor: '0x504945'
+
+  # Normal colors
+  normal:
+    black:   '0xf9f5d7'
+    red:     '0x9d0006'
+    green:   '0x79740e'
+    yellow:  '0xb57614'
+    blue:    '0x076678'
+    magenta: '0x8f3f71'
+    cyan:    '0x427b58'
+    white:   '0x504945'
+
+  # Bright colors
+  bright:
+    black:   '0xbdae93'
+    red:     '0x9d0006'
+    green:   '0x79740e'
+    yellow:  '0xb57614'
+    blue:    '0x076678'
+    magenta: '0x8f3f71'
+    cyan:    '0x427b58'
+    white:   '0x282828'
+
+  indexed_colors:
+    - { index: 16, color: '0xaf3a03' }
+    - { index: 17, color: '0xd65d0e' }
+    - { index: 18, color: '0xebdbb2' }
+    - { index: 19, color: '0xd5c4a1' }
+    - { index: 20, color: '0x665c54' }
+    - { index: 21, color: '0x3c3836' }
+
+
+  aquarium_dark: &aquarium
+    primary:
+      background:        &aquarium_bg '#20202A'
+      foreground:        '#63718B'
+      bright_foreground: '#a0a8b6'
+      dim_foreground:    '#4c5664'
+
+    cursor:
+      cursor: '#b8dceb'
+      text: '#20202a'
+
+    vi_mode_cursor:
+      cursor: '#E8CCA7'
+
+    bright:
+      black:   '#3b3b4d'
+      red:     '#cc9b9d'
+      green:   '#a3ccad'
+      yellow:  '#d1ba97'
+      blue:    '#B8C9EA'
+      magenta: '#c497b3'
+      cyan:    '#95C2D1'
+      white:   '#63718B'
+
+    normal:
+      black:   '#44495E'
+      red:     '#ebb9b9'
+      green:   '#caf6bb'
+      yellow:  '#ebe3b9'
+      blue:    '#cddbf9'
+      magenta: '#f6bbe7'
+      cyan:    '#b8dceb'
+      white:   '#C6D0E9'
+
+
+melange: &melange
+  primary:
+    foreground: '#ECE1D7'
+    background: '#292522'
+  normal:
+    black:   '#34302C'
+    red:     '#BD8183'
+    green:   '#78997A'
+    yellow:  '#E49B5D'
+    blue:    '#7F91B2'
+    magenta: '#B380B0'
+    cyan:    '#7B9695'
+    white:   '#C1A78E'
+  bright:
+    black:   '#867462'
+    red:     '#D47766'
+    green:   '#85B695'
+    yellow:  '#EBC06D'
+    blue:    '#A3A9CE'
+    magenta: '#CF9BC2'
+    cyan:    '#89B3B6'
+    white:   '#ECE1D7'
+
+
+palenight: &palenight
+  # Default colors
+  primary:
+    background: '0x292d3e'
+    foreground: '0x959dcb'
+
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text: '0x292d3e'
+    cursor: '0x959dcb'
+
+  # Normal colors
+  normal:
+    black:   '0x292d3e'
+    red:     '0xf07178'
+    green:   '0xc3e88d'
+    yellow:  '0xffcb6b'
+    blue:    '0x82aaff'
+    magenta: '0xc792ea'
+    cyan:    '0x89ddff'
+    white:   '0x959dcb'
+
+  # Bright colors
+  bright:
+    black:   '0x676e95'
+    red:     '0xf07178'
+    green:   '0xc3e88d'
+    yellow:  '0xffcb6b'
+    blue:    '0x82aaff'
+    magenta: '0xc792ea'
+    cyan:    '0x89ddff'
+    white:   '0xffffff'
+
+
+
+# Colors (Ayu Dark)
+  ayu: &ayu
+  # Default colors
+  primary:
+    background: '#0A0E14'
+    foreground: '#B3B1AD'
+
+  # Normal colors
+  normal:
+    black: '#01060E'
+    red: '#EA6C73'
+    green: '#91B362'
+    yellow: '#F9AF4F'
+    blue: '#53BDFA'
+    magenta: '#FAE994'
+    cyan: '#90E1C6'
+    white: '#C7C7C7'
+
+  # Bright colors
+  bright:
+    black: '#686868'
+    red: '#F07178'
+    green: '#C2D94C'
+    yellow: '#FFB454'
+    blue: '#59C2FF'
+    magenta: '#FFEE99'
+    cyan: '#95E6CB'
+    white: '#FFFFFF'
+
+
+
+night-owl: &night-owl
+  # Default colors
+  primary:
+    background: '0x011627'
+    foreground: '0xd6deeb'
+
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text: '0xffffff'
+    cursor: '0x7e57c2'
+
+  # Normal colors
+  normal:
+    black:   '0x000000'
+    red:     '0xef5350'
+    green:   '0x22da6e'
+    yellow:  '0xaddb67'
+    blue:    '0x82aaff'
+    magenta: '0xc792ea'
+    cyan:    '0x21c7a8'
+    white:   '0xffffff'
+
+  # Bright colors
+  bright:
+    black:   '0x575656'
+    red:     '0xef5350'
+    green:   '0x22da6e'
+    yellow:  '0xffeb95'
+    blue:    '0x82aaff'
+    magenta: '0xc792ea'
+    cyan:    '0x7fdbca'
+    white:   '0xffffff'
+
 ######################################################################
 ## SET THEME: Choose ONE color scheme from those in the above list. ##
 ## ###################################################################
@@ -637,7 +920,10 @@ schemes:
 # *solarized-dark
 # *tomorrow-night
 # *fairyfloss
-colors: *everforest_dark_hard
+colors: *gruvbox-dark
+
+# import: 
+  # - ~/.config/alacritty/themes/catppuccin-mocha.yml
 # Visual Bell
 #
 # Any time the BEL code is received, Alacritty "rings" the visual bell. Once
@@ -669,7 +955,7 @@ colors: *everforest_dark_hard
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
 window:
-  opacity: 0.95
+  opacity: 1.00
 # background_opacity: 0.80
 
 #selection:
